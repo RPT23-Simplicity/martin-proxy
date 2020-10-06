@@ -1,13 +1,13 @@
-var mysql = require('mysql');
+const mysql = require('mysql');
 
-var connection = mysql.createConnection({
+const connection = mysql.createConnection({
   host     : 'localhost',
   user     : 'root',
   password : '',
   database : 'proxy_primary'
 });
 
-var selectAll = function(callback) {
+const selectAll = function(callback) {
   connection.query('SELECT * FROM items', function(err, results, fields) {
     if(err) {
       callback(err, null);
