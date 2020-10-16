@@ -1,11 +1,7 @@
 const mysql = require('mysql');
+const config = require('./config');
 
-const connection = mysql.createConnection({
-  host     : 'localhost',
-  user     : 'root',
-  password : 'FILL_ME_IN',
-  database : 'test'
-});
+const connection = mysql.createConnection(config);
 
 const selectAll = function(callback) {
   connection.query('SELECT * FROM items', function(err, results, fields) {
