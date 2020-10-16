@@ -1,9 +1,9 @@
 import React from 'react';
 
-const ListItem = (props) => (
+const Header = (props) => (
   <div>
     { props.item.description }
   </div>
 )
 
-export default ListItem;
+export default Header;
