@@ -1,12 +1,12 @@
-DROP DATABASE IF EXISTS test;
+DROP DATABASE IF EXISTS proxy;
 
-CREATE DATABASE test;
+CREATE DATABASE proxy;
 
-USE test;
+USE proxy;
 
 CREATE TABLE items (
   id int NOT NULL AUTO_INCREMENT,
-  quantity integer NOT NULL,
+  product varchar(50) NOT NULL,
   description varchar(50) NOT NULL,
   PRIMARY KEY (ID)
 );

@@ -1,0 +1,34 @@
+#photo-module {
+  float: left;
+  position: relative;
+  width: 54%;
+  max-width: 54%;
+  margin-left: 7%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+#item-info {
+  float: right;
+  position: relative;
+  margin-top: 6%;
+  margin-right: -3%;
+}
+
+#product-module {
+  margin-right: 100%;
+  position: relative;
+  padding-bottom: 2%;
+}
+
+#inventor-module {
+  position: relative;
+}
+
+#reviews-module {
+  margin-top: 40%;
+  margin-right: 55%;
+  margin-left: -0.9%;
+  position: relative;
+  padding-bottom: 5%;
+}

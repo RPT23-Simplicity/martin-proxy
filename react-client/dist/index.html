@@ -2,22 +2,21 @@
 <html>
 <head>
   <title>Proxy-Server</title>
-  <link rel="stylesheet" href="style.css">
+  <link type="text/css" rel="stylesheet" href="/styles.css">
 </head>
 <body>
 
 <div id="app"></div>
 <br></br>
-<div id="photo-module" style="float:left; width:56%; max-width:56%; margin-left:5%"></div>
-<div style="float:right; position:relative">
-  <div id="product-module" style="width:87%; margin-right:25%; padding-bottom:1%"></div>
-  <div id="inventory-module" style="margin-left:12%; padding-bottom:none"></div>
-  <div id="reviews-module" style="margin-right:2.2%; margin-left:-0.9%; margin-bottom:30%; position: relative"></div>
+<div id="photo-module"></div>
+<div id="item-info">
+  <div id="product-module"></div>
+  <div id="inventory-module"></div>
+  <div id="reviews-module"></div>
 </div>
-<br></br>
-<script src="http://localhost:3000/bundle-photo-module.js"></script>
-<script src="http://localhost:3002/bundle.js"></script>
-<script src="http://localhost:3004/bundle.js"></script>
-<script src="http://localhost:3008/product-bundle.js"></script>
+<script src="https://ultimate-nike.s3-us-west-1.amazonaws.com/bundle-photo-module.js"></script>
+<script src="https://simplicity-reviews.s3-us-west-1.amazonaws.com/bundle.js"></script>
+<script src="https://ultimate-nike-inventory.s3.us-east-2.amazonaws.com/bundle.js"></script>
+<script src="https://simplicity-product-service.s3-us-west-2.amazonaws.com/product-bundle.js"></script>
 </body>
 </html>

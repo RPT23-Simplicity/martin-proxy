@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "react-dev": "webpack -d --watch",
+    "build": "webpack --mode production",
     "server-dev": "nodemon server/index.js",
+    "start": "node server/index.js",
     "test": "mocha -r esm --exit || true",
     "test-client": "mocha --r @babel/register --r ./test/helpers.js --r ./test/dom.js 'src/**/*.spec.js'"
   },

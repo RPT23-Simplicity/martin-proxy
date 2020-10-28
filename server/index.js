@@ -2,6 +2,8 @@ const express = require('express');
 const path = require('path')
 const items = require('../database-mysql');
 const cors = require('cors');
+const port = process.env.PORT || 3010;
+
 
 const app = express();
 
@@ -25,7 +27,7 @@ app.get('/shop/:productId/:styleId', (req, res) => {
   res.sendFile(path.join(__dirname, '../react-client/dist/index.html'));
 });
 
-app.listen(4002, function() {
-  console.log('listening on port 4002!');
+app.listen(port, function() {
+  console.log(`listening on ${port}`);
 });
 
