@@ -33,18 +33,6 @@ app.get('/api/reviews/:productID', (req, res) => {
     .catch(error => {
       res.status(500).send(error);
     });
-
-  // $.ajax({
-  //   url: `http://18.219.146.205:3003/api/reviews/${productID}`,
-  //   method: 'GET',
-  //   success: (data) => {
-  //     res.status(200).send(data);
-  //   },
-  //   error: (err) => {
-  //     res.status(500).send(err);
-  //     throw (err);
-  //   }
-  // });
 });
 
 app.listen(port, function() {
