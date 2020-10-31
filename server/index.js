@@ -1,9 +1,9 @@
 const express = require('express');
 const path = require('path')
-const items = require('../database-mysql');
 const cors = require('cors');
-const port = process.env.PORT || 3010;
+const axios = require('axios');
 
+const port = process.env.PORT || 80;
 
 const app = express();
 
@@ -11,20 +11,40 @@ app.use(cors({
   origin: '*',
 }));
 
-app.use(express.static(__dirname + '/../react-client/dist'));
+app.options('*', cors());
 
-app.get('/items', function (req, res) {
-  items.selectAll(function(err, data) {
-    if(err) {
-      res.sendStatus(500);
-    } else {
-      res.json(data);
-    }
-  });
-});
+app.use(express.static(__dirname + '/../react-client/dist'));
 
 app.get('/shop/:productId/:styleId', (req, res) => {
   res.sendFile(path.join(__dirname, '../react-client/dist/index.html'));
+});
+
+app.get('/api/reviews/:productID', (req, res) => {
+  const productID = req.params.productID;
+
+  return axios.get(`http://18.219.146.205:3003/api/reviews/${productID}`, {
+    params: {
+      productID: productID
+    }
+  })
+    .then(response => {
+      res.status(200).send(response.data);
+    })
+    .catch(error => {
+      res.status(500).send(error);
+    });
+
+  // $.ajax({
+  //   url: `http://18.219.146.205:3003/api/reviews/${productID}`,
+  //   method: 'GET',
+  //   success: (data) => {
+  //     res.status(200).send(data);
+  //   },
+  //   error: (err) => {
+  //     res.status(500).send(err);
+  //     throw (err);
+  //   }
+  // });
 });
 
 app.listen(port, function() {
