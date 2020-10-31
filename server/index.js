@@ -35,6 +35,58 @@ app.get('/api/reviews/:productID', (req, res) => {
     });
 });
 
+app.get('/inventory/:productID/:styleID', (req, res) => {
+  const productID = req.params.productID;
+  const styleID = req.params.styleID;
+
+  return axios.get(`http://3.137.143.152:3004/inventory/${productID}/${styleID}`, {
+    params: {
+      productID: productID,
+      styleID: styleID
+    }
+  })
+    .then(response => {
+      res.status(200).send(response.data);
+    })
+    .catch(error => {
+      res.status(500).send(error);
+    });
+});
+
+app.get('/photos/:productid', (req, res) => {
+  const productid = req.params.productid;
+
+  return axios.get(`http://13.56.180.105/photos/${productid}`, {
+    params: {
+      productid: productID,
+    }
+  })
+    .then(response => {
+      res.status(200).send(response.data);
+    })
+    .catch(error => {
+      res.status(500).send(error);
+    });
+});
+
+app.get('/photos/:productid/:styleid', (req, res) => {
+  const productid = req.params.productid;
+  const styleid = req.params.styleid;
+
+  return axios.get(`http://13.56.180.105/photos/${productid}/${styleid}`, {
+    params: {
+      productID: productid,
+      styleID: styleid
+    }
+  })
+    .then(response => {
+      res.status(200).send(response.data);
+    })
+    .catch(error => {
+      res.status(500).send(error);
+    });
+});
+
 app.listen(port, function() {
   console.log(`listening on ${port}`);
 });
