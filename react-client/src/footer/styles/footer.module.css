@@ -1,3 +1,217 @@
-.footer {
-  margin-top: 90%;
+#footer {
+  margin-top: 200%;
+  width: 100%;
+  background-color: black;
+  height: 50%;
+  overflow: hidden;
+  top: 15%;
+  left: 0;
+  position: absolute;
+  transition: top 0.3s;
+}
+
+#colOne {
+  float: left;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  color: white;
+  margin-top: 4%;
+  margin-left: 3%;
+}
+
+.giftCard {
+  padding-bottom: 15%;
+  cursor: pointer;
+}
+
+.promotion {
+  padding-bottom: 15%;
+  cursor: pointer;
+}
+
+.findStore {
+  padding-bottom: 15%;
+  cursor: pointer;
+}
+
+.signUp {
+  padding-bottom: 15%;
+  cursor: pointer;
+}
+
+.membership {
+  padding-bottom: 15%;
+  cursor: pointer;
+}
+
+.journal {
+  padding-bottom: 15%;
+  cursor: pointer;
+}
+
+.feedback {
+  padding-bottom: 15%;
+  cursor: pointer;
+}
+
+#colTwo {
+  float: right;
+  font-size: 12px;
+  margin-top: 4%;
+  margin-right: 68%;
+}
+
+.assistance {
+  padding-bottom: 15%;
+  cursor: pointer;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  color: white;
+}
+
+.status {
+  padding-bottom: 15%;
+  cursor: pointer;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 11.9px;
+  color: rgb(139, 139, 139);
+}
+
+.shipping {
+  padding-bottom: 15%;
+  cursor: pointer;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 11.9px;
+  color: rgb(139, 139, 139);
+}
+
+.returns {
+  padding-bottom: 15%;
+  cursor: pointer;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 11.9px;
+  color: rgb(139, 139, 139);
+}
+
+.payment {
+  padding-bottom: 15%;
+  cursor: pointer;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 11.9px;
+  color: rgb(139, 139, 139);
+}
+
+.cardBalance {
+  padding-bottom: 15%;
+  cursor: pointer;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 11.9px;
+  color: rgb(139, 139, 139);
+}
+
+.contact {
+  padding-bottom: 15%;
+  cursor: pointer;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 11.9px;
+  color: rgb(139, 139, 139);
+}
+
+#colThree {
+  float: right;
+  font-size: 12px;
+  margin-top: -17.1%;
+  margin-right: 51%;
+}
+
+.about {
+  padding-bottom: 15%;
+  cursor: pointer;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  color: white;
+}
+
+.news {
+  padding-bottom: 15%;
+  cursor: pointer;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 11.9px;
+  color: rgb(139, 139, 139);
+}
+
+.careers {
+  padding-bottom: 15%;
+  cursor: pointer;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 11.9px;
+  color: rgb(139, 139, 139);
+}
+
+.investors {
+  padding-bottom: 15%;
+  cursor: pointer;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 11.9px;
+  color: rgb(139, 139, 139);
+}
+
+.purpose {
+  padding-bottom: 15%;
+  cursor: pointer;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 11.9px;
+  color: rgb(139, 139, 139);
+}
+
+.sustainability {
+  padding-bottom: 15%;
+  cursor: pointer;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 11.9px;
+  color: rgb(139, 139, 139);
+}
+
+.chainsAct {
+  padding-bottom: 15%;
+  cursor: pointer;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 11.9px;
+  color: rgb(139, 139, 139);
+}
+
+.twitter {
+  cursor: pointer;
+  float: right;
+  position: relative;
+  margin-right: -45%;
+  margin-top: -18%;
+  fill: #7e7e7e;
+}
+
+.facebook {
+  cursor: pointer;
+  float: right;
+  position: relative;
+  margin-right: -48.7%;
+  margin-top: -18%;
+  fill: #7e7e7e;
+}
+
+.youtube {
+  cursor: pointer;
+  float: right;
+  position: relative;
+  margin-right: -52.4%;
+  margin-top: -18%;
+  fill: #7e7e7e;
+}
+
+.instagram {
+  cursor: pointer;
+  float: right;
+  position: relative;
+  margin-right: -56.1%;
+  margin-top: -18%;
+  fill: #7e7e7e;
 }

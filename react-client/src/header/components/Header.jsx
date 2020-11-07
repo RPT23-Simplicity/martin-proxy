@@ -16,7 +16,7 @@ const Header = (props) => (
     </div>
     <br />
     <div id={styles.navbar}>
-      <svg class="pre-logo-svg" height="60px" width="60px" fill="#111" viewBox="0 0 69 32" className={styles.nikelogo} href="https://www.nike.com/">
+      <svg height="60px" width="60px" fill="#111" viewBox="0 0 69 32" className={styles.nikelogo} href="https://www.nike.com/">
         <path d="M68.56 4L18.4 25.36Q12.16 28 7.92 28q-4.8 0-6.96-3.36-1.36-2.16-.8-5.48t2.96-7.08q2-3.04 6.56-8-1.6 2.56-2.24 5.28-1.2 5.12 2.16 7.52Q11.2 18 14 18q2.24 0 5.04-.72z"></path>
       </svg>
       <div style={{ marginTop: "-5.8%", position: "relative" }}>
@@ -30,7 +30,7 @@ const Header = (props) => (
     </div>
     <div className={styles.searchbar}>
         <div>
-          <svg class="pre-search-input-icon" fill="#111" height="23px" width="23px" viewBox="0 0 24 24" className={styles.searchSvg}>
+          <svg fill="#111" height="23px" width="23px" viewBox="0 0 24 24" className={styles.searchSvg}>
             <path d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.39zM11 18a7 7 0 1 1 7-7 7 7 0 0 1-7 7z"></path>
           </svg>
           <input type="text" placeholder="Search" className={styles.search}/>
