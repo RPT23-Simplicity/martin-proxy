@@ -1,0 +1,46 @@
+#photo-module {
+  float: left;
+  left: 0%;
+  position: relative;
+  width: 56%;
+  max-width: 56%;
+  margin-left: 5%;
+  padding-top: 4%;
+  padding-bottom: 5%;
+  padding-right: -10%;
+}
+
+#item-info {
+  float: right;
+  right: 0%;
+  position: relative;
+  margin-top: 4%;
+  margin-right: -2%;
+  padding-left: 3%;
+  display: block;
+}
+
+#product-module {
+  position: relative;
+  margin-left: -1.6%;
+  padding-bottom: 2%;
+  height: 30%;
+  width: 82%;
+}
+
+#inventory-module {
+  width: 50%;
+  padding-left: 2%;
+  margin-left: 48.1%;
+  position: relative;
+  display: inline-block;
+}
+
+#reviews-module {
+  margin-top: -10%;
+  margin-right: 53%;
+  position: relative;
+  padding-right: 2%;
+  padding-bottom: 5%;
+  padding-top: 1%;
+}
