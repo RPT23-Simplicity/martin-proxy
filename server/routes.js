@@ -1,5 +1,5 @@
 const express = require('express');
-const path = require('path')
+const path = require('path');
 const cors = require('cors');
 const axios = require('axios');
 
@@ -13,7 +13,7 @@ app.options('*', cors());
 
 app.use(express.static(__dirname + '/../react-client/dist'));
 
-app.get('/shop/:productId/:styleId', (req, res) => {
+app.get('/shop/:productId/:styleId', (res) => {
   res.sendFile(path.join(__dirname, '../react-client/dist/index.html'));
 });
 

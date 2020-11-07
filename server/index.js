@@ -1,4 +1,4 @@
-const app = require('./routes')
+const app = require('./routes');
 
 const port = process.env.PORT || 80;
 
