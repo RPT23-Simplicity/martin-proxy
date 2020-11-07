@@ -13,4 +13,4 @@ const HeaderBottom = () => (
   </div>
 );
 
-export default HeaderBottom
+export default HeaderBottom;
