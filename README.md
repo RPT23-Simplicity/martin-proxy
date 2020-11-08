@@ -14,6 +14,14 @@ The goals of this project include:
 
 ## How To Use
 
-> Install dependencies: npm run install
-> Build webpack: npm run build
-> Start server: npm run start
+- Install dependencies: npm run install
+- Build webpack: npm run build
+- Start server: npm run start
+
+## Changes
+
+- Add Header and Footers using React
+- Add CSS styling using CSS modules
+- Add micro-services API routes
+- Add CSS styles for html page
+- Add Docker file and yml file for deployment
